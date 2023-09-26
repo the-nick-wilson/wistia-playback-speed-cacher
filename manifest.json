@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Wistia Speed Setter for Alation University",
+  "version": "1.0",
+  "description": "Automatically set Wistia video playback speed on Alation University.",
+  "permissions": ["storage", "activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["*://learn.alation.com/*"],
+      "js": ["wistiaSpeedSetter.js"]
+    }
+  ]
+}
